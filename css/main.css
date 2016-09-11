@@ -1,0 +1,110 @@
+/** Things I need to do
+--- Fixed header with 460px search bar central 16px font
+--- Gallery 980px wide with 60px between images. 
+--- 4 images per line. 60x3=180 980-180=800 4 images 200px square.**/
+
+/** Header and search box styles **/
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+	background-color: #fff;
+	margin: 0;
+	padding-bottom: 50px;
+	border-bottom: 2px dashed #ccc;
+  position: fixed;
+  width: 100%;
+}
+.search-box {
+	text-align: center;
+}
+input[type="text"] {
+	font-size: 1em;
+  height: auto;
+  width: 460px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+input[type="text"]:hover {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+/** Gallery styles **/
+
+.gallery {
+  padding-top: 135px;
+}
+.gallery ul {
+	margin: 0 auto;
+	display: block;
+	width: 980px;
+	text-align: center;
+}
+
+.gallery ul li {
+	display: inline-block;
+	width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.gallery img {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	width: 200px;
+	height: 200px;
+}
+
+.gallery ul li:hover{
+  box-shadow: 0 0 20px #777;
+}
+
+
+#lightbox div.lb-dataContainer > div > div.lb-details > span.lb-caption {
+	font-size: 1em;
+  width: 600px;
+	margin: 10px 35%;
+	display: inline-block;
+}
+	
+/** Media Queries **/
+
+
+@media screen and ( min-width: 320px ) {
+
+	.gallery ul {
+		max-width: 80%;
+	}
+	.gallery ul li {
+		margin: 15px;
+	}
+	input[type="text"] {
+		max-width: 60%;
+	}
+} 
+
+@media screen and ( min-width: 768px ) {
+	.gallery ul {
+		max-width: 80%;
+	}
+	.gallery ul li {
+		margin: 15px;
+	}
+	input[type="text"] {
+		max-width: 30%;
+	}
+}
+
+
+
+
+
+
+
+
+
